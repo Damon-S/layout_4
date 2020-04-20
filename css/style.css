@@ -24,6 +24,21 @@ ul {
     margin: 0;
 }
 
+.container {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
 .header {
     text-align: center;
 }
@@ -152,3 +167,135 @@ ul {
     left: 9px;
 }
 
+
+.popular {
+    text-align: center;
+}
+
+.popular__title {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: PT Serif;
+    font-size: 48px;
+    line-height: 64px;
+    padding: 18px 15px;
+    font-weight: 400;
+}
+
+
+
+.popular__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+.popular__item {}
+
+.popular__item-img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.popular__item-title {
+    padding: 30px 10px;
+    font-size: 24px;
+    line-height: 24px;
+    color: #888888;
+    font-weight: 400;
+}
+
+.popular__item-link {
+    background-color: #c4c4c4;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 13px 48px;
+}
+
+.reason {
+    padding: 100px;
+}
+
+.reason__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reason__item {
+    width: 470px;
+}
+
+.reason__item-title {
+    font-family: PT Serif;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 20px;
+    padding-left: 136px;
+    position: relative;
+}
+
+.reason__item-title::before {
+    content: '';
+    position: absolute;
+    width: 103px;
+    height: 103px;
+    top: 0;
+    left: 0;
+}
+
+.reason__item-title--icon-1 {
+    background: url(../images/alarm.png) no-repeat;
+}
+
+.reason__item-title--icon-2 {
+    background: url(../images/earth.png) no-repeat;
+}
+
+.reason__item-text {
+    margin-bottom: 42px;
+}
+
+.reason__item-link {
+    position: relative;
+    color: #888888;
+    padding-left: 36px;
+}
+
+.reason__item-link::before {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 30px;
+    top: -4px;
+    left: 0;
+    background: url(../images/arrow-black.svg) no-repeat;
+}
+
+.best {
+    background: url(../images/home-best.jpg) no-repeat top center;
+    background-size: cover;
+    min-height: 100vh;
+    text-align: right;
+}
+
+.best__title {
+    font-family: PT Serif;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 48px;
+    max-width: 492px;
+    margin-left: auto;
+    padding: 68px 0 15px;
+    color: #ffffff;
+}
+
+.best__link {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 16px 18px;
+}
