@@ -94,6 +94,18 @@ h6 {
     min-height: 600px;
 }
 
+.slide1 {
+    background-image: url(../images/slide1.jpg);
+}
+
+.slide2 {
+    background-image: url(../images/slide2.jpg);
+}
+
+.slide3 {
+    background-image: url(../images/slide3.jpg);
+}
+
 .slick-arrow {
     border: none;
     outline: none;
@@ -321,7 +333,9 @@ h6 {
     justify-content: space-between;
 }
 
-.our-manager {}
+.our-manager {
+    width: 295px;
+}
 
 .about__title {
     margin-bottom: 47px;
@@ -535,6 +549,39 @@ h6 {
 
 }
 
+@media(max-width:1140px) {
+    .about__inner {
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    .reviews {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .blog {
+        margin-left: 150px;
+    }
+
+    .footer__top-inner {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .footer__menu {
+        margin-bottom: 50px;
+        align-self: center;
+    }
+
+    .footer__menu-list {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .footer__menu-item {}
+}
+
 @media(max-width:992px) {
     .search__form {
         flex-wrap: wrap;
@@ -555,6 +602,53 @@ h6 {
 
     .best {
         min-height: 600px;
+    }
+}
+
+@media(max-width:900px) {
+    .about__inner {
+        display: block;
+    }
+
+    .our-manager {
+        margin: 0 auto;
+    }
+
+    .blog {
+        margin: 50px auto;
+        max-width: 420px;
+        width: auto;
+    }
+
+    .reviews {
+        max-width: 420px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .blog__link {
+        line-height: 18px;
+        padding-left: 50px;
+        margin-bottom: 28px;
+    }
+
+    .footer__form {
+        flex-direction: column;
+    }
+
+    .footer__form-label {
+        margin-right: 0;
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .footer__form-input {
+        text-align: center;
+        margin-bottom: 30px;
+        /* max-width: 500px; */
+        width: 580px;
     }
 }
 
@@ -587,6 +681,13 @@ h6 {
 
     .best {
         min-height: 400px;
+    }
+
+    .reason,
+    .about,
+    .footer__top,
+    .popular__inner {
+        padding: 50px 0;
     }
 }
 
@@ -637,6 +738,15 @@ h6 {
         font-size: 28px;
         line-height: 32px;
     }
+
+    .slide2 {
+        background-position: top right;
+    }
+
+    .footer__form-input {
+        width: 400px;
+        padding: 20px 15px 20px;
+    }
 }
 
 @media(max-width:480px) {
@@ -655,8 +765,13 @@ h6 {
         display: none;
     }
 
-    .slick-arrow {
-        display: none !important;
+    .footer__form-input {
+        width: 280px;
+    }
+
+    .footer__form-btn {
+        padding: 20px 37px;
+        width: 100%;
     }
 }
 
